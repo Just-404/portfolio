@@ -1,0 +1,17 @@
+header {
+}
+
+header nav ul {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+nav ul {
+  list-style-type: none;
+  background-color: #ffffff;
+}
+
+.hero-section img {
+  height: auto;
+  width: 300px;
+}
