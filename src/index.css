@@ -12,11 +12,21 @@
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   box-sizing: border-box;
+
+  --sections-padding: 1rem;
+  --heading-font-size: 50px;
+  --primary-text-size: 18px;
+  --secondary-text-size: 16px;
 }
 
 * {
   margin: 0;
   padding: 0;
+}
+
+main,
+footer {
+  padding: var(--sections-padding);
 }
 a {
   font-weight: 500;
@@ -28,10 +38,11 @@ body {
   background-color: #000000;
   display: flex;
   place-content: center;
+  font-size: var(--primary-text-size);
 }
 
 #root {
-  width: 1200px;
+  width: 1100px;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -59,4 +70,12 @@ button:hover {
 button:focus,
 button:focus-visible {
   outline: 4px auto -webkit-focus-ring-color;
+}
+
+@media (max-width: 500px) {
+  :root {
+    --primary-text-size: 16px;
+    --secondary-text-size: 14px;
+    --heading-font-size: 35px;
+  }
 }
