@@ -79,11 +79,12 @@ nav a:hover {
 
 .profile {
   position: relative;
-  transition: transform 0.5s ease-in-out;
+  transition: transform 0.5s ease-in-out, box-shadow 0.5s ease-in-out;
   box-shadow: 1rem 1.5rem 1rem #ffffffc6;
 }
 .profile:hover {
   transform: translateY(-10px);
+  box-shadow: 1rem 1.5rem 1rem #00c2cb;
 }
 .profile h2 {
   position: absolute;
@@ -93,17 +94,13 @@ nav a:hover {
   text-align: center;
 }
 
-@keyframes glowingSweep {
-  0% {
-    background-position: 200% center;
-  }
-  100% {
-    background-position: -200% center;
-  }
-}
-
-@media (prefers-reduced-motion: reduce) {
-  .hero-content h1 {
-    animation: none;
+@media (prefers-reduced-motion: no-preference) {
+  @keyframes glowingSweep {
+    0% {
+      background-position: 200% center;
+    }
+    100% {
+      background-position: -200% center;
+    }
   }
 }

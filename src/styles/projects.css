@@ -1,0 +1,42 @@
+.projects h2 {
+  margin-bottom: 1rem;
+}
+.cards-container {
+  display: grid;
+  gap: 5rem;
+  padding-inline: 2rem;
+  overflow-x: hidden;
+  padding-bottom: 2rem;
+}
+
+.card {
+  will-change: transform, opacity;
+  padding: 0.5rem 1rem;
+  height: 15rem;
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  border-radius: 20px;
+  box-shadow: 1rem 1.5rem 1rem #00c2cb;
+}
+
+.card img {
+  width: 150px;
+  height: 100px;
+}
+
+.skills {
+  margin-top: 5rem;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .card {
+    transition: transform 1s ease-out, opacity 0.6s ease-out;
+    transform: scale(0.8) translateX(300px);
+    opacity: 0;
+  }
+  .card.show {
+    transform: scale(1) translate(0);
+    opacity: 1;
+  }
+}
