@@ -30,7 +30,7 @@ export default function ProjectCard({ project }) {
     <div className="card" ref={cardRef}>
       <div>
         <a href={project.url} target="_blank" rel="noopener noreferrer">
-          <img src="" alt="" />
+          <img src="#" alt="" />
         </a>
       </div>
       <div className="card-content">

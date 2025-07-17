@@ -1,3 +1,6 @@
+const ASSETSPATH = "./../../public/";
+const ICONSPATH = ASSETSPATH + "icons/";
+
 const HEADER = {
   profile: {
     name: "Eddy Rodriguez",
@@ -45,4 +48,15 @@ const PROJECTS = [
     url: `https://just-404.github.io/Battleship/`,
   },
 ];
-export { HEADER, PROJECTS };
+
+const SKILLS = [
+  { name: "Git", svgPath: ICONSPATH + "git.svg" },
+  { name: "Github", svgPath: ICONSPATH + "github.svg" },
+  { name: "HTML5", svgPath: ICONSPATH + "html5.svg" },
+  { name: "CSS3", svgPath: ICONSPATH + "css3.svg" },
+  { name: "Javascript", svgPath: ICONSPATH + "javascript.svg" },
+  { name: "React", svgPath: ICONSPATH + "react.svg" },
+  { name: "PostgreSQL", svgPath: ICONSPATH + "postgresql.svg" },
+  { name: "NodeJS", svgPath: ICONSPATH + "nodejs.svg" },
+];
+export { HEADER, PROJECTS, SKILLS };
