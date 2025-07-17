@@ -1,4 +1,3 @@
-import profileImg from "../../assets/profile-placeholder.jpg";
 import { HEADER } from "../../utils/pageConstants";
 
 export default function HeroHeader() {
@@ -12,7 +11,7 @@ export default function HeroHeader() {
         </div>
       </div>
       <div className="profile">
-        <img src={profileImg} alt="Profile" />
+        <img src={HEADER.profile.img} alt="Profile" />
         <h2>{HEADER.profile.name}</h2>
       </div>
     </section>
