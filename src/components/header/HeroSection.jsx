@@ -4,7 +4,7 @@ export default function HeroHeader() {
   return (
     <section className="hero-section">
       <div className="hero-content">
-        <h1>UI | UX Enhanced Experience</h1>
+        <h1>Software Developer</h1>
         <div className="about">
           <h2>About me</h2>
           <p>{HEADER.profile.about}</p>

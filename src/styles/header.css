@@ -4,6 +4,7 @@ nav {
   position: absolute;
   width: 100%;
   left: 0;
+  color: #fff;
 }
 
 header nav ul {
@@ -28,16 +29,16 @@ nav ul li a {
 }
 
 nav a:hover {
-  background-color: #c6c6c6ea;
+  background-color: #a3a3a3ea;
 }
 
 .hero-section {
   display: flex;
   flex-wrap: wrap;
-  place-content: center space-evenly;
   flex-direction: column;
   gap: 2rem;
   padding: 6rem 1.5rem;
+  align-items: center;
 }
 
 .hero-content {
@@ -52,10 +53,10 @@ nav a:hover {
   color: transparent;
   background: linear-gradient(
     90deg,
-    #fff 0%,
+    #000000 0%,
     #00c2cb 30%,
     #00c2cb 70%,
-    #fff 100%
+    #000000 100%
   );
   background-size: 200% auto;
   background-clip: text;
@@ -69,12 +70,7 @@ nav a:hover {
   max-width: 100%;
   word-wrap: break-word;
   overflow: hidden;
-  padding: 1rem;
-}
-
-.about:hover {
-  color: #fff;
-  text-shadow: 0px 0px 10px #00c2cb, 0px 0px 20px #00c2cb;
+  padding: 1rem 0;
 }
 
 .hero-section img {
@@ -97,6 +93,7 @@ nav a:hover {
   background-color: rgb(58, 56, 56);
   width: 100%;
   text-align: center;
+  color: #fff;
 }
 
 @media (prefers-reduced-motion: no-preference) {
@@ -116,6 +113,7 @@ nav a:hover {
   }
   .hero-section {
     flex-direction: row;
+    justify-content: center;
   }
   .profile {
     width: 250px;

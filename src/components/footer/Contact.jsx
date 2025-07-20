@@ -44,7 +44,7 @@ export default function Contact() {
               target="_blank"
               rel="noopener nooreferrer"
             >
-              <img src="/icons/github.svg" alt="Github logo" />
+              <img src="/icons/github-white.svg" alt="Github logo" />
             </a>
             <a
               href="https://www.linkedin.com/in/eddy-rodr%C3%ADguez-osoria-8089b8366/"

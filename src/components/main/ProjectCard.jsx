@@ -41,7 +41,7 @@ export default function ProjectCard({ project }) {
             target="_blank"
             rel="noopener nooreferrer"
           >
-            <img src="/icons/github.svg" alt="Github logo" />
+            <img src="/icons/github-white.svg" alt="Github logo" />
           </a>
           <a href={project.url} target="_blank" rel="noopener nooreferrer">
             <img src="/icons/external-link.svg" alt="Open new tab project" />
