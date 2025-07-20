@@ -32,17 +32,19 @@ nav a:hover {
 }
 
 .hero-section {
-  padding-top: 6rem;
   display: flex;
   flex-wrap: wrap;
   place-content: center space-evenly;
+  flex-direction: column;
+  gap: 2rem;
+  padding: 6rem 1.5rem;
 }
 
 .hero-content {
   display: flex;
   flex-direction: column;
   place-content: center;
-  gap: 1rem;
+  gap: 2rem;
 }
 
 .hero-content h1 {
@@ -64,7 +66,10 @@ nav a:hover {
 
 .about {
   position: relative;
-  width: 600px;
+  max-width: 100%;
+  word-wrap: break-word;
+  overflow: hidden;
+  padding: 1rem;
 }
 
 .about:hover {
@@ -73,14 +78,14 @@ nav a:hover {
 }
 
 .hero-section img {
-  height: auto;
-  width: 250px;
+  width: 100%;
 }
 
 .profile {
+  width: 200px;
   position: relative;
   transition: transform 0.5s ease-in-out, box-shadow 0.5s ease-in-out;
-  box-shadow: 1rem 1.5rem 1rem #ffffffc6;
+  box-shadow: 1rem 1.5rem 1rem #9c9c9cc6;
 }
 .profile:hover {
   transform: translateY(-10px);
@@ -102,5 +107,17 @@ nav a:hover {
     100% {
       background-position: -200% center;
     }
+  }
+}
+
+@media (min-width: 500px) {
+  .about {
+    max-width: 600px;
+  }
+  .hero-section {
+    flex-direction: row;
+  }
+  .profile {
+    width: 250px;
   }
 }

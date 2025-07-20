@@ -73,6 +73,20 @@ button:focus-visible {
   outline: 4px auto -webkit-focus-ring-color;
 }
 
+.icons-container {
+  display: flex;
+  gap: 1rem;
+}
+
+.icons-container a > img {
+  width: 45px;
+  height: auto;
+  margin-top: 1rem;
+}
+
+.card .icons-container a > img {
+  width: 30px;
+}
 @media (max-width: 500px) {
   :root {
     --primary-text-size: 16px;

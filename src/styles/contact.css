@@ -33,11 +33,17 @@ footer {
   gap: 1rem;
 }
 
-.contact img {
+.profile-img {
   max-width: 400px;
   width: 100%;
   min-width: 100px;
   height: auto;
   aspect-ratio: 1 / 1;
-  object-fit: cover;
+  object-fit: contain;
+}
+
+@media (max-width: 500px) {
+  .contact .profile-img {
+    display: none;
+  }
 }

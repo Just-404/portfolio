@@ -4,8 +4,8 @@
 .cards-container {
   display: grid;
   gap: 5rem;
+  grid-template-columns: 1fr;
   padding-inline: 2rem;
-  overflow-x: hidden;
   padding-bottom: 2rem;
 }
 
@@ -18,11 +18,17 @@
   gap: 1rem;
   border-radius: 20px;
   box-shadow: 1rem 1.5rem 1rem #00c2cb;
+  font-size: var(--secondary-text-size);
 }
 
 .card img {
-  width: 150px;
+  max-width: 150px;
   height: 100px;
+  transition: transform 1s ease-out;
+}
+
+.card img:hover {
+  transform: scale(1.5);
 }
 
 .skills {
@@ -32,11 +38,38 @@
 @media (prefers-reduced-motion: no-preference) {
   .card {
     transition: transform 1s ease-out, opacity 0.6s ease-out;
-    transform: scale(0.8) translateX(300px);
+    transform: scale(0.8) translateX(20vw);
     opacity: 0;
   }
   .card.show {
     transform: scale(1) translate(0);
     opacity: 1;
+  }
+
+  @media (max-width: 500px) {
+    .card {
+      transform: scale(0.8) translatey(50vw);
+    }
+  }
+}
+
+@media (max-width: 500px) {
+  .cards-container {
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  }
+  .card img {
+    max-width: 80px;
+    object-fit: contain;
+  }
+  .card {
+    height: 12rem;
+    padding: 0.5rem;
+    box-shadow: 0.5rem 1rem 0.5rem #00c2cb;
+  }
+}
+
+@media (max-width: 320px) {
+  .card {
+    padding: 0;
   }
 }
