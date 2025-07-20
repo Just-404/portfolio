@@ -4,7 +4,7 @@ import "../../styles/projects.css";
 
 export default function Projects() {
   return (
-    <section className="projects">
+    <section className="projects" id="projects-section">
       <h2>My projects</h2>
       <div className="cards-container">
         {PROJECTS?.map((project, idx) => (

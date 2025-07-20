@@ -3,13 +3,13 @@ export default function Nav() {
     <nav>
       <ul>
         <li>
-          <a href="">Projects</a>
+          <a href="#projects-section">Projects</a>
         </li>
         <li>
-          <a href="">Skills</a>
+          <a href="#skills-section">Skills</a>
         </li>
         <li>
-          <a href="">Contact</a>
+          <a href="#contact-section">Contact</a>
         </li>
       </ul>
     </nav>
